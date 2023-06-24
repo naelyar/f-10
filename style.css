@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.div {
+  width: 700px;
+  height: 700px;
+  background-color: #000;
+  margin-top: 70px;
+}
+@media (max-width: 768px) {
+  .div {
+    width: 400px;
+    height: 400px;
+    background-color: #30b62b;
+  }
+}
+
+@media (max-width: 405px) {
+  .div {
+    width: 200px;
+    height: 200px;
+    background-color: #c4e968;
+  }
+}
+
+.mini {
+  width: 700px;
+  height: 700px;
+  background-color: #000;
+  margin-top: 70px;
+}
+@media (min-width: 400px) {
+  .mini {
+    width: 350px;
+    height: 350px;
+    background-color: aqua;
+  }
+}
+
+.divImg img {
+  width: 640px;
+}
+@media (max-width: 670px) {
+  .divImg img {
+    /* width: 300px; */
+    width: 100%;
+    margin: 0 10px;
+  }
+}
+.wrapper {
+  height: 500px;
+  background-color: #d280c7;
+  padding: 40px 0;
+}
+@media (max-width: 1024px) {
+  .wrapper {
+    height: auto;
+  }
+}
+.container {
+  width: 1240px;
+  margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+.wrapperIn {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+@media (max-width: 768px) {
+  .wrapperIn {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+.item {
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  padding: 40px;
+}
+.team {
+  height: 723px;
+  padding: 50px 0;
+  text-align: center;
+}
+.teamText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.teamText h2 {
+  font-weight: 600;
+  font-size: 78px;
+  line-height: 92px;
+  text-align: center;
+}
+.teamText .item {
+  color: #00b2a0;
+  font-weight: 900;
+  font-size: 152px;
+  width: 101px;
+  height: 100px;
+  position: relative;
+  top: -71px;
+  right: 49px;
+}
+.members {
+  display: flex;
+  gap: 80px;
+  margin-top: 60px;
+}
+@media(max-width:768px){
+    .members{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        margin: 0 15px;
+    }
+}
+
+.form input {
+  width: 400px;
+  height: 50px;
+  color: #d280c7;
+  font-size: 16px;
+  font-style: italic;
+}
+input::placeholder{
+  color: #00b2a0;
+}
